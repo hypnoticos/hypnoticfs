@@ -31,11 +31,10 @@ int main(int argc, char *argv[]) {
   HypnoticFS_Index_t entry;
   uint8_t found_entry, found_parent;
 
-  fprintf(stdout, "HypnoticOS  Copyright (C) 2019 jk30\n");
-  fprintf(stdout, "HypnoticFS, tool to create directories on an image v0.1\n");
-  fprintf(stdout, "\n");
-
   if(argc != 3) {
+    fprintf(stdout, "HypnoticOS  Copyright (C) 2019 jk30\n");
+    fprintf(stdout, "HypnoticFS, tool to create directories on an image v0.1\n");
+    fprintf(stdout, "\n");
     fprintf(stdout, "This tool will create a directory on an HypnoticFS image.\n");
     fprintf(stdout, "\n");
     fprintf(stdout, "Usage: %s image directory\n", argv[0]);
@@ -174,8 +173,6 @@ int main(int argc, char *argv[]) {
   }
 
   fclose(f_image);
-
-  fprintf(stdout, "Done.\n");
 
   // TODO Clean up
 

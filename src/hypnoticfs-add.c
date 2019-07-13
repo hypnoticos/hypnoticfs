@@ -31,11 +31,10 @@ int main(int argc, char *argv[]) {
   HypnoticFS_Index_t entry;
   uint8_t found_entry, found_parent, found_offset;
 
-  fprintf(stdout, "HypnoticOS  Copyright (C) 2019 jk30\n");
-  fprintf(stdout, "HypnoticFS, tool to add files to an image v0.1\n");
-  fprintf(stdout, "\n");
-
   if(argc != 4) {
+    fprintf(stdout, "HypnoticOS  Copyright (C) 2019 jk30\n");
+    fprintf(stdout, "HypnoticFS, tool to add files to an image v0.1\n");
+    fprintf(stdout, "\n");
     fprintf(stdout, "This tool will add a file to an HypnoticFS image.\n");
     fprintf(stdout, "\n");
     fprintf(stdout, "Usage: %s image dest to-add\n", argv[0]);
@@ -249,8 +248,6 @@ int main(int argc, char *argv[]) {
 
   fclose(f_image);
   fclose(f_to_add);
-
-  fprintf(stdout, "Done.\n");
 
   // TODO Clean up
 

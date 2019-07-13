@@ -26,11 +26,10 @@ int main(int argc, char *argv[]) {
   uint64_t offset, index_size, size;
   FILE *f;
 
-  fprintf(stdout, "HypnoticOS  Copyright (C) 2019 jk30\n");
-  fprintf(stdout, "HypnoticFS image creation tool v0.1\n");
-  fprintf(stdout, "\n");
-
   if(argc != 3) {
+    fprintf(stdout, "HypnoticOS  Copyright (C) 2019 jk30\n");
+    fprintf(stdout, "HypnoticFS image creation tool v0.1\n");
+    fprintf(stdout, "\n");
     fprintf(stdout, "This tool will create an HypnoticFS image.\n");
     fprintf(stdout, "\n");
     fprintf(stdout, "Usage: %s file size\n", argv[0]);
@@ -69,8 +68,6 @@ int main(int argc, char *argv[]) {
   }
 
   fclose(f);
-
-  fprintf(stdout, "Done.\n");
 
   return 0;
 }
