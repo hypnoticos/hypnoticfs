@@ -11,7 +11,7 @@ make
 
 To install:
 ```
-DESTDIR=/home/username/bin make install
+DESTDIR=/home/username/local make install
 ```
 Where `/home/username/local` is the location to which HypnoticFS Tools will be installed. If `DESTDIR` is not specified, `DESTDIR=/usr/local` is assumed in its place.
 
